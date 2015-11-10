@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0011BE014040021DDD0 /* AppDelegate.swift */; };
-		83C4E0041BE014040021DDD0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0031BE014040021DDD0 /* FirstViewController.swift */; };
-		83C4E0061BE014040021DDD0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0051BE014040021DDD0 /* SecondViewController.swift */; };
 		83C4E0091BE014040021DDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E0071BE014040021DDD0 /* Main.storyboard */; };
 		83C4E00B1BE014040021DDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E00A1BE014040021DDD0 /* Assets.xcassets */; };
 		83C4E00E1BE014040021DDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E00C1BE014040021DDD0 /* LaunchScreen.storyboard */; };
 		83C4E0191BE014040021DDD0 /* ProgressiveOverload_DraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0181BE014040021DDD0 /* ProgressiveOverload_DraftTests.swift */; };
 		83C4E0241BE014040021DDD0 /* ProgressiveOverload_DraftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0231BE014040021DDD0 /* ProgressiveOverload_DraftUITests.swift */; };
+		83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */; };
+		83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E30E111BF11AEA0009CD9E /* Exercises.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		83C4DFFE1BE014040021DDD0 /* ProgressiveOverload_Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressiveOverload_Draft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C4E0011BE014040021DDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83C4E0031BE014040021DDD0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		83C4E0051BE014040021DDD0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		83C4E0081BE014040021DDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83C4E00A1BE014040021DDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C4E00D1BE014040021DDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		83C4E01F1BE014040021DDD0 /* ProgressiveOverload_DraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressiveOverload_DraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C4E0231BE014040021DDD0 /* ProgressiveOverload_DraftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveOverload_DraftUITests.swift; sourceTree = "<group>"; };
 		83C4E0251BE014040021DDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewController.swift; path = ../ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		83E30E111BF11AEA0009CD9E /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercises.swift; path = ../Exercises.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				83C4E0011BE014040021DDD0 /* AppDelegate.swift */,
-				83C4E0031BE014040021DDD0 /* FirstViewController.swift */,
-				83C4E0051BE014040021DDD0 /* SecondViewController.swift */,
+				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
+				83E30E111BF11AEA0009CD9E /* Exercises.swift */,
 				83C4E0071BE014040021DDD0 /* Main.storyboard */,
 				83C4E00A1BE014040021DDD0 /* Assets.xcassets */,
 				83C4E00C1BE014040021DDD0 /* LaunchScreen.storyboard */,
@@ -258,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C4E0061BE014040021DDD0 /* SecondViewController.swift in Sources */,
 				83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */,
-				83C4E0041BE014040021DDD0 /* FirstViewController.swift in Sources */,
+				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
+				83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +487,7 @@
 				83C4E02A1BE014040021DDD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C4E02B1BE014040021DDD0 /* Build configuration list for PBXNativeTarget "ProgressiveOverload_DraftTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +496,7 @@
 				83C4E02D1BE014040021DDD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C4E02E1BE014040021DDD0 /* Build configuration list for PBXNativeTarget "ProgressiveOverload_DraftUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +505,7 @@
 				83C4E0301BE014040021DDD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
