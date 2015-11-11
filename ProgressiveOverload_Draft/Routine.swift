@@ -14,10 +14,6 @@ class Routine{
         scheduledDateAndTime = newScheduledDateAndTime
     }
 
-    func scheduleWorkoutRoutine(){}
-
-    func skipWorkoutRoutine(){}
-
     func addExercise(newExercise){
         workoutExercises.append(newExercise)
         muscleGroups.append(newExercise.musclesUsed)

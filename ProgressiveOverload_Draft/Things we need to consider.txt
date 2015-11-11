@@ -1,0 +1,82 @@
+muscle group, muscle, name, equipment, exercise kind, starting weight, current weight, current reps, current sets, goal weight, goal sets, goal reps, max, min, increment, schedule, weeks at current weight, maintain or gain, current 3mo. period, blacklisted, notes,
+
+
+
+
+
+
+
+
+What kind of training to focus on (goals):
+    General
+    beginner
+    strength
+
+Factors:
+    man
+    woman
+    body type
+    experience
+    goals
+    time? Available schedule?
+    equipment
+
+things to account for in data:
+    muscles (group & individual)
+    schedule
+    current level (weights, reps, sets, schedule)
+    goals (if any)
+    starting info
+    calibrations
+    notes
+
+What we need:
+    a way to read in added data
+    process that data to determine next steps
+    issue reccomended training based on goals, current stats, personal profile
+
+Ways beginners are different from experienced folk:
+    need a tutorial
+    don't know what exercises are
+    don't know what they can do
+    don't know about muscles, training, gym etiquette
+    don't have a schedule or a workout habit
+    unrealistic expectations
+
+training should be predetermined; we can't build an accurate algorithmic model with the information we have; we would need to get the aid of a professional to be able to help us with that, and it would mostly be predetermined anyway.
+
+workout routines need to be able to be suggested on the fly; we need to know what exercises fit well with each other.
+
+So, we need a way of categorizing the exercises.
+    * what muscles an exercise uses
+    * is it being used as a warm up
+    * what muscle group the exercise is
+    * what other muscles are used to do this exercise
+    * how muscle groups pair with each other; how to pair them
+    * which muscle groups are more important, need to be worked out more.
+    * Which muscle groups have been worked out recently, and when.
+    * how the muscle groups are being trained.
+    * any special considerations: hurt / missing limb, etc.
+
+Include disclaimer about how, even though it's outside the scope of this app, cardio is also important.
+
+
+
+
+func getNextWeight(exercise:Exercise){
+        baseline = exercise.currentWeight
+        listOfWeights = [5-100 by 5's]          // baseline = listOfWeights[i]?
+        nextWeight = listOfWeights[i]
+            if ((baseline * 1.25)> (nextWeight + listOfWeights[i+1] / 2)){
+                if(exercise.weeksAtCurrentWeight < 2){
+                    reps = reps * 1.25
+                }else{
+                    nextWeight = listOfWeights[i+2]
+                    reps = reps * .5
+                }
+            }
+            else{
+                nextWeight = listOfWeights[i]
+                reps = reps * 1.5
+            }
+    }
