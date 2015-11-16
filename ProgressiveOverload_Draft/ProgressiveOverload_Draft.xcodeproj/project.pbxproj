@@ -10,6 +10,24 @@
 		83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */; };
 		83B9E1491BF95E68009461FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */; };
 		83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14A1BFA5A98009461FC /* Routines.swift */; };
+		83B9E14D1BFA6A94009461FC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */; };
+		83B9E15B1BFA6D6D009461FC /* swift-linechart-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E15A1BFA6D6D009461FC /* swift-linechart-master.zip */; };
+		83B9E16E1BFA73C9009461FC /* LineChart.zip in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B9E1611BFA6DE5009461FC /* LineChart.zip */; };
+		83B9E1721BFA7605009461FC /* LineChart in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1711BFA7605009461FC /* LineChart */; };
+		83B9E1731BFA7605009461FC /* LineChart in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1711BFA7605009461FC /* LineChart */; };
+		83B9E1741BFA7605009461FC /* LineChart in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1711BFA7605009461FC /* LineChart */; };
+		83B9E17D1BFA7629009461FC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1761BFA7629009461FC /* .gitignore */; };
+		83B9E17E1BFA7629009461FC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1761BFA7629009461FC /* .gitignore */; };
+		83B9E17F1BFA7629009461FC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1761BFA7629009461FC /* .gitignore */; };
+		83B9E1801BFA7629009461FC /* linechart in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1771BFA7629009461FC /* linechart */; };
+		83B9E1811BFA7629009461FC /* linechart in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1771BFA7629009461FC /* linechart */; };
+		83B9E1821BFA7629009461FC /* linechart in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E1771BFA7629009461FC /* linechart */; };
+		83B9E1831BFA7629009461FC /* linechartTests in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E17B1BFA7629009461FC /* linechartTests */; };
+		83B9E1841BFA7629009461FC /* linechartTests in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E17B1BFA7629009461FC /* linechartTests */; };
+		83B9E1851BFA7629009461FC /* linechartTests in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E17B1BFA7629009461FC /* linechartTests */; };
+		83B9E1861BFA7629009461FC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E17C1BFA7629009461FC /* README.md */; };
+		83B9E1871BFA7629009461FC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E17C1BFA7629009461FC /* README.md */; };
+		83B9E1881BFA7629009461FC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E17C1BFA7629009461FC /* README.md */; };
 		83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0011BE014040021DDD0 /* AppDelegate.swift */; };
 		83C4E0091BE014040021DDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E0071BE014040021DDD0 /* Main.storyboard */; };
 		83C4E00B1BE014040021DDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E00A1BE014040021DDD0 /* Assets.xcassets */; };
@@ -21,6 +39,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		83B9E18B1BFA7629009461FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B9E1781BFA7629009461FC /* linechart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C06F8E151962FFD7000AC9AF;
+			remoteInfo = linechart;
+		};
+		83B9E18D1BFA7629009461FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B9E1781BFA7629009461FC /* linechart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C06F8E221962FFD7000AC9AF;
+			remoteInfo = linechartTests;
+		};
+		83B9E18F1BFA7637009461FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B9E1781BFA7629009461FC /* linechart.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C06F8E141962FFD7000AC9AF;
+			remoteInfo = linechart;
+		};
 		83C4E0151BE014040021DDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83C4DFF61BE014040021DDD0 /* Project object */;
@@ -41,6 +80,20 @@
 		83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
 		83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		83B9E14A1BFA5A98009461FC /* Routines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routines.swift; path = ../Routines.swift; sourceTree = "<group>"; };
+		83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../HistoryViewController.swift; sourceTree = "<group>"; };
+		83B9E15A1BFA6D6D009461FC /* swift-linechart-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "swift-linechart-master.zip"; path = "/Users/chris/GitHub/ProgressiveOverloadDevelopment/ProgressiveOverload_Draft/swift-linechart-master.zip"; sourceTree = "<absolute>"; };
+		83B9E1611BFA6DE5009461FC /* LineChart.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = LineChart.zip; sourceTree = "<group>"; };
+		83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LineChartConfig.xcconfig; sourceTree = "<group>"; };
+		83B9E1631BFA717A009461FC /* ProgressiveOverload_Draft-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ProgressiveOverload_Draft-Bridging-Header.h"; path = "ProgressiveOverload_Draft/ProgressiveOverload_Draft-Bridging-Header.h"; sourceTree = "<group>"; };
+		83B9E16A1BFA7282009461FC /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		83B9E16B1BFA72A6009461FC /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
+		83B9E16C1BFA72EB009461FC /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		83B9E1711BFA7605009461FC /* LineChart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LineChart; sourceTree = "<group>"; };
+		83B9E1761BFA7629009461FC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = LineChart/.gitignore; sourceTree = "<group>"; };
+		83B9E1771BFA7629009461FC /* linechart */ = {isa = PBXFileReference; lastKnownFileType = folder; name = linechart; path = LineChart/linechart; sourceTree = "<group>"; };
+		83B9E1781BFA7629009461FC /* linechart.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = linechart.xcodeproj; path = LineChart/linechart.xcodeproj; sourceTree = "<group>"; };
+		83B9E17B1BFA7629009461FC /* linechartTests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = linechartTests; path = LineChart/linechartTests; sourceTree = "<group>"; };
+		83B9E17C1BFA7629009461FC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = LineChart/README.md; sourceTree = "<group>"; };
 		83C4DFFE1BE014040021DDD0 /* ProgressiveOverload_Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressiveOverload_Draft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C4E0011BE014040021DDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C4E0081BE014040021DDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E16E1BFA73C9009461FC /* LineChart.zip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +136,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83B9E15E1BFA6D72009461FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */,
+				83B9E1611BFA6DE5009461FC /* LineChart.zip */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83B9E16D1BFA731F009461FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83B9E1631BFA717A009461FC /* ProgressiveOverload_Draft-Bridging-Header.h */,
+				83B9E16C1BFA72EB009461FC /* macosx.modulemap */,
+				83B9E16B1BFA72A6009461FC /* iphonesimulator.modulemap */,
+				83B9E16A1BFA7282009461FC /* iphoneos.modulemap */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83B9E1751BFA7614009461FC /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				83B9E1761BFA7629009461FC /* .gitignore */,
+				83B9E1771BFA7629009461FC /* linechart */,
+				83B9E1781BFA7629009461FC /* linechart.xcodeproj */,
+				83B9E17B1BFA7629009461FC /* linechartTests */,
+				83B9E17C1BFA7629009461FC /* README.md */,
+				83B9E1711BFA7605009461FC /* LineChart */,
+			);
+			name = LineChart;
+			sourceTree = "<group>";
+		};
+		83B9E1791BFA7629009461FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B9E18C1BFA7629009461FC /* linechart.app */,
+				83B9E18E1BFA7629009461FC /* linechartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		83C4DFF51BE014040021DDD0 = {
 			isa = PBXGroup;
 			children = (
+				83B9E1751BFA7614009461FC /* LineChart */,
+				83B9E16D1BFA731F009461FC /* Supporting Files */,
+				83B9E15E1BFA6D72009461FC /* Frameworks */,
 				83C4E0001BE014040021DDD0 /* ProgressiveOverload_Draft */,
 				83C4E0171BE014040021DDD0 /* ProgressiveOverload_DraftTests */,
 				83C4E0221BE014040021DDD0 /* ProgressiveOverload_DraftUITests */,
@@ -105,14 +204,15 @@
 		83C4E0001BE014040021DDD0 /* ProgressiveOverload_Draft */ = {
 			isa = PBXGroup;
 			children = (
-				83B9E14A1BFA5A98009461FC /* Routines.swift */,
 				83C4E0011BE014040021DDD0 /* AppDelegate.swift */,
-				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
-				83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */,
-				83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */,
 				83E30E111BF11AEA0009CD9E /* Exercises.swift */,
-				83C4E0071BE014040021DDD0 /* Main.storyboard */,
+				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
+				83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */,
+				83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */,
+				83B9E14A1BFA5A98009461FC /* Routines.swift */,
+				83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */,
 				83C4E00A1BE014040021DDD0 /* Assets.xcassets */,
+				83C4E0071BE014040021DDD0 /* Main.storyboard */,
 				83C4E00C1BE014040021DDD0 /* LaunchScreen.storyboard */,
 				83C4E00F1BE014040021DDD0 /* Info.plist */,
 			);
@@ -151,6 +251,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				83B9E1901BFA7637009461FC /* PBXTargetDependency */,
 			);
 			name = ProgressiveOverload_Draft;
 			productName = ProgressiveOverload_Draft;
@@ -199,6 +300,7 @@
 		83C4DFF61BE014040021DDD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Chris;
 				TargetAttributes = {
@@ -226,6 +328,12 @@
 			mainGroup = 83C4DFF51BE014040021DDD0;
 			productRefGroup = 83C4DFFF1BE014040021DDD0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83B9E1791BFA7629009461FC /* Products */;
+					ProjectRef = 83B9E1781BFA7629009461FC /* linechart.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				83C4DFFD1BE014040021DDD0 /* ProgressiveOverload_Draft */,
@@ -235,13 +343,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		83B9E18C1BFA7629009461FC /* linechart.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = linechart.app;
+			remoteRef = 83B9E18B1BFA7629009461FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		83B9E18E1BFA7629009461FC /* linechartTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = linechartTests.xctest;
+			remoteRef = 83B9E18D1BFA7629009461FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		83C4DFFC1BE014040021DDD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E1721BFA7605009461FC /* LineChart in Resources */,
+				83B9E15B1BFA6D6D009461FC /* swift-linechart-master.zip in Resources */,
 				83C4E00E1BE014040021DDD0 /* LaunchScreen.storyboard in Resources */,
+				83B9E1831BFA7629009461FC /* linechartTests in Resources */,
 				83C4E00B1BE014040021DDD0 /* Assets.xcassets in Resources */,
+				83B9E1801BFA7629009461FC /* linechart in Resources */,
+				83B9E17D1BFA7629009461FC /* .gitignore in Resources */,
 				83C4E0091BE014040021DDD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +380,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E17E1BFA7629009461FC /* .gitignore in Resources */,
+				83B9E1731BFA7605009461FC /* LineChart in Resources */,
+				83B9E1811BFA7629009461FC /* linechart in Resources */,
+				83B9E1841BFA7629009461FC /* linechartTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +391,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E17F1BFA7629009461FC /* .gitignore in Resources */,
+				83B9E1741BFA7605009461FC /* LineChart in Resources */,
+				83B9E1821BFA7629009461FC /* linechart in Resources */,
+				83B9E1851BFA7629009461FC /* linechartTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +410,8 @@
 				83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */,
 				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
 				83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */,
+				83B9E14D1BFA6A94009461FC /* HistoryViewController.swift in Sources */,
+				83B9E1861BFA7629009461FC /* README.md in Sources */,
 				83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E1871BFA7629009461FC /* README.md in Sources */,
 				83C4E0191BE014040021DDD0 /* ProgressiveOverload_DraftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E1881BFA7629009461FC /* README.md in Sources */,
 				83C4E0241BE014040021DDD0 /* ProgressiveOverload_DraftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +437,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		83B9E1901BFA7637009461FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = linechart;
+			targetProxy = 83B9E18F1BFA7637009461FC /* PBXContainerItemProxy */;
+		};
 		83C4E0161BE014040021DDD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 83C4DFFD1BE014040021DDD0 /* ProgressiveOverload_Draft */;
@@ -329,6 +476,7 @@
 /* Begin XCBuildConfiguration section */
 		83C4E0261BE014040021DDD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -374,6 +522,7 @@
 		};
 		83C4E0271BE014040021DDD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -412,57 +561,75 @@
 		};
 		83C4E0291BE014040021DDD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProgressiveOverload_Draft/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChrisWorks.ProgressiveOverload-Draft";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProgressiveOverload_Draft/ProgressiveOverload_Draft-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		83C4E02A1BE014040021DDD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProgressiveOverload_Draft/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChrisWorks.ProgressiveOverload-Draft";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProgressiveOverload_Draft/ProgressiveOverload_Draft-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		83C4E02C1BE014040021DDD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProgressiveOverload_DraftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChrisWorks.ProgressiveOverload-DraftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProgressiveOverload_Draft/ProgressiveOverload_DraftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressiveOverload_Draft.app/ProgressiveOverload_Draft";
 			};
 			name = Debug;
 		};
 		83C4E02D1BE014040021DDD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProgressiveOverload_DraftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChrisWorks.ProgressiveOverload-DraftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProgressiveOverload_Draft/ProgressiveOverload_DraftTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressiveOverload_Draft.app/ProgressiveOverload_Draft";
 			};
 			name = Release;
 		};
 		83C4E02F1BE014040021DDD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProgressiveOverload_DraftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChrisWorks.ProgressiveOverload-DraftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProgressiveOverload_Draft/ProgressiveOverload_DraftUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = ProgressiveOverload_Draft;
 				USES_XCTRUNNER = YES;
 			};
@@ -470,11 +637,14 @@
 		};
 		83C4E0301BE014040021DDD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9E1621BFA6F2A009461FC /* LineChartConfig.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProgressiveOverload_DraftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChrisWorks.ProgressiveOverload-DraftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProgressiveOverload_Draft/ProgressiveOverload_DraftUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = ProgressiveOverload_Draft;
 				USES_XCTRUNNER = YES;
 			};

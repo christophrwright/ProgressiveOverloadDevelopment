@@ -1,0 +1,14 @@
+//
+//  LineChartConfig.xcconfig
+//  ProgressiveOverload_Draft
+//
+//  Created by Chris on 11/16/15.
+//  Copyright © 2015 Chris. All rights reserved.
+//
+
+MODULEMAP_FILE[sdk=iphoneos*]        = \
+$(SRCROOT)/LineChart/iphoneos.modulemap
+MODULEMAP_FILE[sdk=iphonesimulator*] = \
+$(SRCROOT)/LineChart/iphonesimulator.modulemap
+MODULEMAP_FILE[sdk=macosx*]          = \
+$(SRCROOT)/LineChart/macosx.modulemap
