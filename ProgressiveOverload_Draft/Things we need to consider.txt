@@ -1,10 +1,35 @@
-muscle group, muscle, name, equipment, exercise kind, starting weight, current weight, current reps, current sets, goal weight, goal sets, goal reps, max, min, increment, schedule, weeks at current weight, maintain or gain, current 3mo. period, blacklisted, notes,
+muscle group, muscle, name, equipment, exercise kind,
+starting weight, current weight, current reps, current sets,
+goal weight, goal sets, goal reps,
+max, min, increment, schedule, weeks at current weight,
+maintain or gain, current 3mo. period, blacklisted, notes,
+
+**********************
+
+exercise[name, weight, reps, sets, [tags:muscleGroup,muscle, equipment ]]
+
+add, remove, change schedule of things
+
+csv storage - read and write
+
+       [  m   ,  t   , w,  th  ,  f , sat,sun]
+Plan = [[Torso],[Legs],[],[Arms],[Back],[],[]]
+        length = 7
+
+simple plan = [legs,back,arms]
+
+home view has buttons to check boxes saying you're done, but then also on tap (not the check boxes) walk though the workout
+
+**********************
+
+
+history = [exercise: (NSdate,[w,r,s])]
+for history display: total weight moved? but we should
 
 
 
-
-
-
+plan contains workouts with subclasses for different kinds of plan
+    custom, to add exercises
 
 
 What kind of training to focus on (goals):
@@ -33,7 +58,7 @@ things to account for in data:
 What we need:
     a way to read in added data
     process that data to determine next steps
-    issue reccomended training based on goals, current stats, personal profile
+    issue recommended training based on goals, current stats, personal profile
 
 Ways beginners are different from experienced folk:
     need a tutorial

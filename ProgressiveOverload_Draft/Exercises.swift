@@ -15,5 +15,4 @@ struct Exercises{
     let musclesUsed: [String]
     var goalStats : [Int] // a triple of Ints for weight, reps and sets; saves performance goals
     var myStats : [Int] // a triple of Ints for weight, reps and sets; saves actual performance
-    
 }

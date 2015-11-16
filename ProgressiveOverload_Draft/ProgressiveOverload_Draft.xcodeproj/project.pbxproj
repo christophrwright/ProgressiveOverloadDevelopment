@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */; };
+		83B9E1491BF95E68009461FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */; };
+		83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14A1BFA5A98009461FC /* Routines.swift */; };
 		83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0011BE014040021DDD0 /* AppDelegate.swift */; };
 		83C4E0091BE014040021DDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E0071BE014040021DDD0 /* Main.storyboard */; };
 		83C4E00B1BE014040021DDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E00A1BE014040021DDD0 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
+		83B9E14A1BFA5A98009461FC /* Routines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routines.swift; path = ../Routines.swift; sourceTree = "<group>"; };
 		83C4DFFE1BE014040021DDD0 /* ProgressiveOverload_Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressiveOverload_Draft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C4E0011BE014040021DDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C4E0081BE014040021DDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,8 +105,11 @@
 		83C4E0001BE014040021DDD0 /* ProgressiveOverload_Draft */ = {
 			isa = PBXGroup;
 			children = (
+				83B9E14A1BFA5A98009461FC /* Routines.swift */,
 				83C4E0011BE014040021DDD0 /* AppDelegate.swift */,
 				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
+				83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */,
+				83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */,
 				83E30E111BF11AEA0009CD9E /* Exercises.swift */,
 				83C4E0071BE014040021DDD0 /* Main.storyboard */,
 				83C4E00A1BE014040021DDD0 /* Assets.xcassets */,
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */,
+				83B9E1491BF95E68009461FC /* ProfileTableViewController.swift in Sources */,
 				83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */,
 				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
+				83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */,
 				83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
