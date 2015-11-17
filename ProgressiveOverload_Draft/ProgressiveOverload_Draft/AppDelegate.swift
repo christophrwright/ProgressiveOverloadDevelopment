@@ -70,6 +70,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("ProgressiveOverload_Draft.sqlite")
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
+        
+        // Looks like this can be fixed with a try/catch: http://pr8x.com/st/questions/31113479/swift-2-extra-argument-error-in-call.html
         if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
             coordinator = nil
             // Report any error we got.
@@ -103,7 +105,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func saveContext () {
         if let moc = self.managedObjectContext {
             var error: NSError? = nil
-            if moc.hasChanges && !moc.save(&error) {
+            // appears to be fixable with another try catch: http://stackoverflow.com/questions/30729011/swift-2-migration-savecontext-in-appdelegate
+            if moc.hasChanges && !moc.save(error) {
                 // Replace this implementation with code to handle the error appropriately.
                 // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 NSLog("Unresolved error \(error), \(error!.userInfo)")
