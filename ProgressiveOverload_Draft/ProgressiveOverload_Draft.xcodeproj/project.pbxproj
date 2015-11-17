@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */; };
+		83B9E1491BF95E68009461FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */; };
 		83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14A1BFA5A98009461FC /* Routines.swift */; };
 		83B9E14D1BFA6A94009461FC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */; };
 		83B9E15B1BFA6D6D009461FC /* swift-linechart-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E15A1BFA6D6D009461FC /* swift-linechart-master.zip */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		83B9E14A1BFA5A98009461FC /* Routines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routines.swift; path = ../Routines.swift; sourceTree = "<group>"; };
 		83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../HistoryViewController.swift; sourceTree = "<group>"; };
 		83B9E15A1BFA6D6D009461FC /* swift-linechart-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "swift-linechart-master.zip"; path = "/Users/chris/GitHub/ProgressiveOverloadDevelopment/ProgressiveOverload_Draft/swift-linechart-master.zip"; sourceTree = "<absolute>"; };
@@ -117,6 +119,7 @@
 				83EC3E711BFB728C00DB35F2 /* MainViewController.swift */,
 				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
 				83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */,
+				83B9E1481BF95E68009461FC /* ProfileTableViewController.swift */,
 				83B9E14A1BFA5A98009461FC /* Routines.swift */,
 				83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */,
 				83C4E00A1BE014040021DDD0 /* Assets.xcassets */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */,
+				83B9E1491BF95E68009461FC /* ProfileTableViewController.swift in Sources */,
 				83EC3E721BFB728C00DB35F2 /* LineChart.swift in Sources */,
 				83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */,
 				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
