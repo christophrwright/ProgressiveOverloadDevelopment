@@ -14,20 +14,20 @@ class RoutineTableViewController: UITableViewController {
         let exerciseList : [Exercises]
     }
     var listOfRoutines = [Routines(name:"myRoutine",
-        exerciseList:[ Exercises(name:"Null",
-                requiredEquipment:"None",
-                musclesUsed:["Zero", "Zilch", "Nada"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0])]
+        exerciseList:[ Exercises(newName:"Null",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Zero", "Zilch", "Nada"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0])]
         )]
     
     @IBAction func addRoutine(sender: AnyObject) {
         let button = sender as! UIButton
-        let newRoutine = Routines(name:"PushUp Routine", exerciseList:[Exercises(name:"Push Ups",
-                requiredEquipment:"None",
-                musclesUsed:["Pectorals", "Triceps", "Back", "Core"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0])])
+        let newRoutine = Routines(name:"PushUp Routine", exerciseList:[Exercises(newName:"Push Ups",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Pectorals", "Triceps", "Back", "Core"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0])])
         listOfRoutines.append(newRoutine)
         button.setValue(button.currentTitle, forKey:"NewTitle")
     }
@@ -49,31 +49,31 @@ class RoutineTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         // this is used as self.listOfRoutines[0]
         self.listOfRoutines = [Routines(name:"FullBody Routine", exerciseList:[
-            Exercises(name:"Push Ups",
-                requiredEquipment:"None",
-                musclesUsed:["Pectorals", "Triceps", "Back", "Core"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0]),
-            Exercises(name:"Sit Ups",
-                requiredEquipment:"None",
-                musclesUsed:["Back", "Core"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0]),
-            Exercises(name:"Squats",
-                requiredEquipment:"None",
-                musclesUsed:["Glutes", "Calves", "Back", "Core"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0]),
-            Exercises(name:"Deadlift",
-                requiredEquipment:"None",
-                musclesUsed:["Back", "Triceps", "Shoulders", "Core"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0]),
-            Exercises(name:"Pull Ups",
-                requiredEquipment:"None",
-                musclesUsed:["Back", "Biceps", "Pectorals"],
-                goalStats:[0,0,0],
-                myStats:[0,0,0])]
+            Exercises(newName:"Push Ups",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Pectorals", "Triceps", "Back", "Core"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0]),
+            Exercises(newName:"Sit Ups",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Back", "Core"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0]),
+            Exercises(newName:"Squats",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Glutes", "Calves", "Back", "Core"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0]),
+            Exercises(newName:"Deadlift",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Back", "Triceps", "Shoulders", "Core"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0]),
+            Exercises(newName:"Pull Ups",
+                newRequiredEquipment:"None",
+                newMusclesUsed:["Back", "Biceps", "Pectorals"],
+                newGoalStats:[0,0,0],
+                newMyStats:[0,0,0])]
             )]
         
         // reload the table
