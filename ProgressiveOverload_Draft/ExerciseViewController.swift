@@ -23,6 +23,8 @@ class ExerciseViewController: UIViewController {
     @IBOutlet weak var userReps: UITextField!
     @IBOutlet weak var userWeight: UITextField!
     
+
+    var currentExercise:Exercises!
     // func setBest(){}
     
     
@@ -30,7 +32,17 @@ class ExerciseViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        self.title = currentExercise.name
+        let selectedGoalStats:[Int] = currentExercise.goalStats as [Int]!
+        let selectedUserStats:[Int] = currentExercise.userStats as [Int]!
+        self.weight.text = "\(selectedGoalStats[0])"
+        self.reps.text = "\(selectedGoalStats[1])"
+        self.sets.text = "\(selectedGoalStats[2])"
         
+        self.userWeight.text = "\(selectedUserStats[0])"
+        self.userReps.text = "\(selectedUserStats[1])"
+        self.userSets.text = "\(selectedUserStats[2])"
     }
 
     override func didReceiveMemoryWarning() {

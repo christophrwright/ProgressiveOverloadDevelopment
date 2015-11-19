@@ -7,36 +7,24 @@
 //
 
 import UIKit
-
 var indexPath = NSIndexPath()
-
-class ExerciseTableViewController: UITableViewController {
+// have tried replacing with , UITableViewDataSource, UITableViewDelegate
+class ExerciseTableViewController: UITableViewController{
     
     @IBOutlet var theTableView: UITableView!
+    var subview:ExerciseViewController!
 
     var listOfExercises:[Exercises] = [Exercises]()
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        let destVC:ExerciseViewController = segue.destinationViewController as! ExerciseViewController
-        
-        // let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath:indexPath) as UITableViewCell
-        let exercise = self.listOfExercises[indexPath.row]
-        
-        let exerciseIndex:Int = theTableView.indexPathForSelectedRow!.row
-        destVC.title = exercise.name // istOfExercises[exerciseIndex].name
-        let selectedGoalStats:[Int] = exercise.goalStats as [Int]!
-        let selectedUserStats:[Int] = exercise.userStats as [Int]!
-        destVC.weight.text = "\(selectedGoalStats[0])"
-        destVC.reps.text = "\(selectedGoalStats[1])"
-        destVC.sets.text = "\(selectedGoalStats[2])"
-        
-        destVC.userWeight.text = "\(selectedUserStats[0])"
-        destVC.userReps.text = "\(selectedUserStats[1])"
-        destVC.userSets.text = "\(selectedUserStats[2])"
-        
-        // listOfExercises[exerciseIndex].name
 
+    
+ 
+    @IBAction func onExerciseSelect(sender: AnyObject) {
+
+        let exercise = self.listOfExercises[indexPath.row]
+        let exerciseIndex:Int = theTableView.indexPathForSelectedRow!.row
+        
+        subview.currentExercise = exercise
         
         print("prep segue: \(exerciseIndex)")
     } //  */
@@ -78,7 +66,7 @@ class ExerciseTableViewController: UITableViewController {
                 newMyStats:[0,0,0])]
         
         // reload the table
-        self.tableView.reloadData()
+        self.theTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,8 +82,7 @@ class ExerciseTableViewController: UITableViewController {
     
     override func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         // ask for a reusable cell from the tableview, and create a new cell if there arent any
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath:indexPath) as UITableViewCell
-        // Get the corresponding candy from the candies array
+        let cell = self.theTableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath:indexPath) as UITableViewCell
         let exercise = self.listOfExercises[indexPath.row]
         
         // Configure Cell
@@ -105,15 +92,6 @@ class ExerciseTableViewController: UITableViewController {
         return cell
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -148,7 +126,7 @@ class ExerciseTableViewController: UITableViewController {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    */
+    // */
 
     /*
     // MARK: - Navigation

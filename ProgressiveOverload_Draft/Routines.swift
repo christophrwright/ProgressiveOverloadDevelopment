@@ -8,7 +8,16 @@
 
 import Foundation
 
-struct Routines{
-    let name : String
-    let routine = [Exercises]()
+class Routines{
+    var name : String
+    var routine = [Exercises]()
+    
+    init(newName:String, newRoutine:[Exercises]){
+        name = newName
+        routine = newRoutine
+    }
+    
+    func changeName(newName:String){
+        self.name = newName
+    }
 }
