@@ -1,0 +1,55 @@
+<-Original message->
+
+/Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard: Internal error. Please file a bug at bugreport.apple.com and attach "/var/folders/1m/9yyk22ts381ddx0jbsk_t_hh0000gp/T/IB-agent-diagnostics_2015-11-19_03-44-01_024000".
+
+<-From the log->
+
+CompileStoryboard /Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard
+cd /Users/chris/GitHub/ProgressiveOverloadDevelopment/ProgressiveOverload_Draft
+export PATH="/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode-beta.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode-beta.app/Contents/Developer/usr/bin/..
+/Applications/Xcode-beta.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module ProgressiveOverload_Draft --output-partial-info-plist /Users/chris/Library/Developer/Xcode/DerivedData/ProgressiveOverload_Draft-gxikjdgxwksmrkgbfedoetkhxywr/Build/Intermediates/ProgressiveOverload_Draft.build/Debug-iphonesimulator/ProgressiveOverload_Draft.build/Main-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --target-device ipad --minimum-deployment-target 9.1 --output-format human-readable-text --compilation-directory /Users/chris/Library/Developer/Xcode/DerivedData/ProgressiveOverload_Draft-gxikjdgxwksmrkgbfedoetkhxywr/Build/Intermediates/ProgressiveOverload_Draft.build/Debug-iphonesimulator/ProgressiveOverload_Draft.build/Base.lproj /Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard
+
+2015-11-19 03:43:52.110 Interface Builder Cocoa Touch Tool[64676:3056901] Error creating notification handler for simulator graphics quality override: 1000000
+2015-11-19 03:44:01.132 ibtoold[64668:3056837] [MT] IBPlatformTool: Wrote failed marshalling request diagnostics to path: /var/folders/1m/9yyk22ts381ddx0jbsk_t_hh0000gp/T/IB-agent-diagnostics_2015-11-19_03-44-01_024000
+/* com.apple.ibtool.errors */
+/Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard: error: Internal error. Please file a bug at bugreport.apple.com and attach "/var/folders/1m/9yyk22ts381ddx0jbsk_t_hh0000gp/T/IB-agent-diagnostics_2015-11-19_03-44-01_024000".
+
+<-What I've Tried->
+    * Uninstalling and reinstalling Xcode 7.2 beta
+    * Attempting to build a previous version of the app in 7.2
+    * Uninstalling and reinstalling the released 7.1 Xcode from the app store
+    * Building the current and previous versions in 7.1
+    * Googling the issue for more info: reccommends that I try the above.
+
+<-What I was doing when the error occured->
+    Trying to use code Professor Cremer's Lab10 TableView application to figure out why my segues don't have back buttons. That code is below.
+
+
+        @IBOutlet weak var theTableView: UITableView!
+        var projects:ClassProjects = ClassProjects()
+
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        let destVC:ProjectWebviewVC = segue.destinationViewController as! ProjectWebviewVC
+        let projectIndex:Int = theTableView.indexPathForSelectedRow!.row
+        let urlString:String = projects.projectURLForIndex(projectIndex)
+        destVC.projectURL = urlString
+        print("prep segue: \(projectIndex)")
+
+        }
+
+
+    The current implementation of the code looks like this:
+
+        // when a cell from the table is selected by the user
+        @IBAction func onExerciseSelect(sender: AnyObject) {
+
+        let exercise = self.listOfExercises[indexPath.row]
+        let exerciseIndex:Int = theTableView.indexPathForSelectedRow!.row
+
+        subview.currentExercise = exercise
+        print("prep segue: \(exerciseIndex)")
+
+        }
+
