@@ -8,13 +8,15 @@
 
 import UIKit
 // We are using https://github.com/zemirco/swift-linechart for our progress graphs
-import LineChart
+//import LineChart
 
 
 class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //var lineChart = LineChart()
+        //lineChart.addLine([3, 4, 9, 11, 13, 15])
 
         // Do any additional setup after loading the view.
     }
