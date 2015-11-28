@@ -8,7 +8,7 @@
 
 import UIKit
 // We are using https://github.com/zemirco/swift-linechart for our progress graphs
-import linechart
+// import linechart
 
 
 class HistoryViewController: UIViewController {

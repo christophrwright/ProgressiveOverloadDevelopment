@@ -14,31 +14,31 @@ class RoutineTableViewController: UITableViewController {
         let exerciseList : [Exercises]
     }
     var listOfRoutines = [Routines(name:"myRoutine",
-        exerciseList:[ Exercises(newName:"Null",
-                newRequiredEquipment:"None",
-                newMusclesUsed:["Zero", "Zilch", "Nada"],
-                newGoalStats:[0,0,0],
-                newMyStats:[0,0,0])]
+        exerciseList:[Exercises(newName:"Null",
+            newRequiredEquipment:"None",
+            newMusclesUsed:["Zero", "Zilch", "Nada"],
+            newGoalStats:[0,0,0],
+            newMyStats:[0,0,0])]
         )]
     
-    @IBAction func addRoutine(sender: AnyObject) {
-        let button = sender as! UIButton
-        let newRoutine = Routines(name:"PushUp Routine", exerciseList:[Exercises(newName:"Push Ups",
-                newRequiredEquipment:"None",
-                newMusclesUsed:["Pectorals", "Triceps", "Back", "Core"],
-                newGoalStats:[0,0,0],
-                newMyStats:[0,0,0])])
-        listOfRoutines.append(newRoutine)
-        button.setValue(button.currentTitle, forKey:"NewTitle")
+    /*  @IBAction func addRoutine(sender: AnyObject) {
+    let button = sender as! UIButton
+    let newRoutine = Routines(name:"PushUp Routine", exerciseList:[Exercises(newName:"Push Ups",
+    newRequiredEquipment:"None",
+    newMusclesUsed:["Pectorals", "Triceps", "Back", "Core"],
+    newGoalStats:[0,0,0],
+    newMyStats:[0,0,0])])
+    listOfRoutines.append(newRoutine)
+    button.setValue(button.currentTitle, forKey:"NewTitle")
     }
     @IBAction func editRoutine(sender: AnyObject) {
-        // send to detail view of routine
+    // send to detail view of routine
     }
     @IBAction func removeRoutine(sender: AnyObject) {
-        // let i:Int
-        // listOfRoutines = listOfRoutines[0...i].popLast().append(listOfRoutines[i+1...(listOfRoutines.length)])
-    }
-       override func viewDidLoad() {
+    // let i:Int
+    // listOfRoutines = listOfRoutines[0...i].popLast().append(listOfRoutines[i+1...(listOfRoutines.length)])
+    }*/
+    override func viewDidLoad() {
         
         super.viewDidLoad()
         
@@ -126,18 +126,18 @@ class RoutineTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-        // Delete the row from the data source
-        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            // Delete the row from the data source
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
-//     */
+    //     */
     
     // *
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-    
+        
     }
     // */
     

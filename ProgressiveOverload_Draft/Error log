@@ -21,6 +21,7 @@ export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode-beta.app/Contents/Developer/
     * Uninstalling and reinstalling the released 7.1 Xcode from the app store
     * Building the current and previous versions in 7.1
     * Googling the issue for more info: reccommends that I try the above.
+    * The above, while also deleting the Developer folders in User/name/Library and Macintosh HD/Library
 
 <-What I was doing when the error occured->
     Trying to use code Professor Cremer's Lab10 TableView application to figure out why my segues don't have back buttons. That code is below.
@@ -53,3 +54,16 @@ export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode-beta.app/Contents/Developer/
 
         }
 
+
+
+<-Current Error->
+    CompileStoryboard /Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard
+    cd /Users/chris/GitHub/ProgressiveOverloadDevelopment/ProgressiveOverload_Draft
+    export PATH="/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode-beta.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode-beta.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode-beta.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module ProgressiveOverload_Draft --output-partial-info-plist /Users/chris/Library/Developer/Xcode/DerivedData/ProgressiveOverload_Draft-gxikjdgxwksmrkgbfedoetkhxywr/Build/Intermediates/ProgressiveOverload_Draft.build/Debug-iphonesimulator/ProgressiveOverload_Draft.build/Main-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --target-device ipad --minimum-deployment-target 9.1 --output-format human-readable-text --compilation-directory /Users/chris/Library/Developer/Xcode/DerivedData/ProgressiveOverload_Draft-gxikjdgxwksmrkgbfedoetkhxywr/Build/Intermediates/ProgressiveOverload_Draft.build/Debug-iphonesimulator/ProgressiveOverload_Draft.build/Base.lproj /Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard
+
+    2015-11-19 14:34:07.869 Interface Builder Cocoa Touch Tool[67869:3275049] Error creating notification handler for simulator graphics quality override: 1000000
+    2015-11-19 14:34:16.352 ibtoold[67866:3274976] [MT] IBPlatformTool: Wrote failed marshalling request diagnostics to path: /var/folders/1m/9yyk22ts381ddx0jbsk_t_hh0000gp/T/IB-agent-diagnostics_2015-11-19_14-34-16_299000
+    /* com.apple.ibtool.errors */
+    /Users/chris/Downloads/ProgressiveOverloadDevelopment-master/ProgressiveOverload_Draft/ProgressiveOverload_Draft/Base.lproj/Main.storyboard: error: Internal error. Please file a bug at bugreport.apple.com and attach "/var/folders/1m/9yyk22ts381ddx0jbsk_t_hh0000gp/T/IB-agent-diagnostics_2015-11-19_14-34-16_299000".

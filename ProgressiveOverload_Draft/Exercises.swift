@@ -31,5 +31,8 @@ class Exercises{
         goalStats = newGoalStats
         userStats = newMyStats
     }
+    
+    
+    func progression(){}
 
 }

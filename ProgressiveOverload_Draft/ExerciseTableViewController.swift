@@ -11,8 +11,8 @@ var indexPath = NSIndexPath()
 // have tried replacing with , UITableViewDataSource, UITableViewDelegate
 class ExerciseTableViewController: UITableViewController{
     
-    @IBOutlet var theTableView: UITableView!
-    var subview:ExerciseViewController!
+   @IBOutlet var theTableView: UITableView!
+   var subview:ExerciseViewController!
 
     var listOfExercises:[Exercises] = [Exercises]()
     
@@ -63,10 +63,11 @@ class ExerciseTableViewController: UITableViewController{
                 newRequiredEquipment:"None",
                 newMusclesUsed:["Back", "Biceps", "Pectorals"],
                 newGoalStats:[0,0,0],
-                newMyStats:[0,0,0])]
+                newMyStats:[0,0,0])
+        ]
         
         // reload the table
-        self.theTableView.reloadData()
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,7 +83,7 @@ class ExerciseTableViewController: UITableViewController{
     
     override func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         // ask for a reusable cell from the tableview, and create a new cell if there arent any
-        let cell = self.theTableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath:indexPath) as UITableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath:indexPath) as UITableViewCell
         let exercise = self.listOfExercises[indexPath.row]
         
         // Configure Cell
@@ -132,7 +133,11 @@ class ExerciseTableViewController: UITableViewController{
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    Exercises(newName:"Pull Ups",
+    newRequiredEquipment:"None",
+    newMusclesUsed:["Back", "Biceps", "Pectorals"],
+    newGoalStats:[0,0,0],
+    newMyStats:[0,0,0])    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
