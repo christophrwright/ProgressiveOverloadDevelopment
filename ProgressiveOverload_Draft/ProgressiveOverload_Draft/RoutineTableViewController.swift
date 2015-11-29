@@ -18,7 +18,12 @@ class RoutineTableViewController: UITableViewController {
             musclesUsed:["Zero", "Zilch", "Nada"],
             requiredEquipment:"None",
             goalStats:[0,0,0],
-            myStats:[0,0,0])]
+            myStats:[0,0,0],
+            gainOrMaintain:false,
+            history:[NSDate():(0,0)],
+            baseline:[(0,0)],
+            weightProgression:progressPlan[0]
+            )]
         )]
     
     /*  @IBAction func addRoutine(sender: AnyObject) {
@@ -53,27 +58,47 @@ class RoutineTableViewController: UITableViewController {
                 musclesUsed:["Pectorals", "Triceps", "Back", "Core"],
                 requiredEquipment:"None",
                 goalStats:[0,0,0],
-                myStats:[0,0,0]),
+                myStats:[0,0,0],
+                gainOrMaintain:false,
+                history:[NSDate():(0,0)],
+                baseline:[(0,0)],
+                weightProgression:progressPlan[0]),
             Exercises(name:"Sit Ups",
                 musclesUsed:["Back", "Core"],
                 requiredEquipment:"None",
                 goalStats:[0,0,0],
-                myStats:[0,0,0]),
+                myStats:[0,0,0],
+                gainOrMaintain:false,
+                history:[NSDate():(0,0)],
+                baseline:[(0,0)],
+                weightProgression:progressPlan[0]),
             Exercises(name:"Squats",
                 musclesUsed:["Glutes", "Calves", "Back", "Core"],
                 requiredEquipment:"None",
                 goalStats:[0,0,0],
-                myStats:[0,0,0]),
+                myStats:[0,0,0],
+                gainOrMaintain:false,
+                history:[NSDate():(0,0)],
+                baseline:[(0,0)],
+                weightProgression:progressPlan[0]),
             Exercises(name:"Deadlift",
                 musclesUsed:["Back", "Triceps", "Shoulders", "Core"],
                 requiredEquipment:"None",
                 goalStats:[0,0,0],
-                myStats:[0,0,0]),
+                myStats:[0,0,0],
+                gainOrMaintain:false,
+                history:[NSDate():(0,0)],
+                baseline:[(0,0)],
+                weightProgression:progressPlan[0]),
             Exercises(name:"Pull Ups",
                 musclesUsed:["Back", "Biceps", "Pectorals"],
                 requiredEquipment:"None",
                 goalStats:[0,0,0],
-                myStats:[0,0,0])]
+                myStats:[0,0,0],
+                gainOrMaintain:false,
+                history:[NSDate():(0,0)],
+                baseline:[(0,0)],
+                weightProgression:progressPlan[0])]
             )]
         
         // reload the table

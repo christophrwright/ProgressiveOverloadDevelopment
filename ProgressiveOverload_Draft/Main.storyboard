@@ -10,7 +10,7 @@
         <!--Routines-->
         <scene sceneID="wN1-aM-f7m">
             <objects>
-                <tableViewController id="4rJ-T2-xum" userLabel="Routines" customClass="RoutineTableViewController" customModule="ProgressiveOverload_Draft" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Routines" id="4rJ-T2-xum" userLabel="Routines" customClass="RoutineTableViewController" customModule="ProgressiveOverload_Draft" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gfn-0H-oHK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Routines" image="routine" selectedImage="routine" id="LG5-vx-4f3"/>
-                    <navigationItem key="navigationItem" title="Routines" id="LVq-Gn-6iS"/>
+                    <navigationItem key="navigationItem" title="Routines" id="LVq-Gn-6iS">
+                        <barButtonItem key="leftBarButtonItem" id="nVq-v4-4cM"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrz-vL-7q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,11 +109,11 @@
             </objects>
             <point key="canvasLocation" x="274" y="-618"/>
         </scene>
-        <!--Exercise Table View Controller-->
+        <!--Routine-->
         <scene sceneID="NIL-9u-baO">
             <objects>
-                <tableViewController id="5AN-Tf-n6z" customClass="ExerciseTableViewController" customModule="ProgressiveOverload_Draft" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="inM-xy-Ji0">
+                <tableViewController title="Routine" id="5AN-Tf-n6z" customClass="ExerciseTableViewController" customModule="ProgressiveOverload_Draft" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="inM-xy-Ji0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -361,10 +363,10 @@
             </objects>
             <point key="canvasLocation" x="992" y="-1332"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Routines-->
         <scene sceneID="9YT-rO-FxG">
             <objects>
-                <tabBarController id="rrN-OW-X4L" sceneMemberID="viewController">
+                <tabBarController title="Routines" id="rrN-OW-X4L" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="CM0-GB-4an"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="cyM-6V-Bzk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -383,7 +385,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPs-0X-src" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-546" y="-2054"/>
+            <point key="canvasLocation" x="-474" y="-2054"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="91c-5m-mBA">
@@ -419,8 +421,10 @@
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <segue destination="3NC-U3-qMJ" kind="show" id="ghd-uE-gde"/>
+                                    <outletCollection property="gestureRecognizers" destination="4Qr-yC-WrD" appends="YES" id="JtP-Wi-ibd"/>
+                                    <segue destination="3NC-U3-qMJ" kind="show" identifier="ShowExercise" id="ghd-uE-gde"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -433,8 +437,13 @@
                     <navigationItem key="navigationItem" title="Exercises" id="x55-lX-3aY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5L-5e-RZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4Qr-yC-WrD">
+                    <connections>
+                        <action selector="prepareForSegue:sender:" destination="hL6-hX-G0v" id="hX0-tE-279"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="274" y="-1332"/>
+            <point key="canvasLocation" x="282" y="-1332"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="4ra-Kv-8yu">
