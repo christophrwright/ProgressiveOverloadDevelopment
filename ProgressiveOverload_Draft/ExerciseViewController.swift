@@ -33,9 +33,9 @@ class ExerciseViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 
-        self.title = currentExercise.name
-        let selectedGoalStats:[Int] = currentExercise.goalStats as [Int]!
-        let selectedUserStats:[Int] = currentExercise.userStats as [Int]!
+        self.title = currentExercise.name_
+        let selectedGoalStats:[Int] = currentExercise.goalStats_ as [Int]!
+        let selectedUserStats:[Int] = currentExercise.userStats_ as [Int]!
         self.weight.text = "\(selectedGoalStats[0])"
         self.reps.text = "\(selectedGoalStats[1])"
         self.sets.text = "\(selectedGoalStats[2])"

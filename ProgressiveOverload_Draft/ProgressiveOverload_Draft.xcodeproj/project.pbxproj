@@ -24,6 +24,8 @@
 		83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E30E111BF11AEA0009CD9E /* Exercises.swift */; };
 		83EC3E721BFB728C00DB35F2 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC3E701BFB728C00DB35F2 /* LineChart.swift */; };
 		83EC3E731BFB728C00DB35F2 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC3E711BFB728C00DB35F2 /* LineChartViewController.swift */; };
+		83EE02CB1C0A65ED00BFF6DD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02CA1C0A65ED00BFF6DD /* File.swift */; };
+		83EE02CD1C0A65F600BFF6DD /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02CC1C0A65F600BFF6DD /* Schedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		83E30E111BF11AEA0009CD9E /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercises.swift; path = ../Exercises.swift; sourceTree = "<group>"; };
 		83EC3E701BFB728C00DB35F2 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineChart.swift; path = ../LineChart/linechart/LineChart.swift; sourceTree = "<group>"; };
 		83EC3E711BFB728C00DB35F2 /* LineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineChartViewController.swift; path = ../LineChart/linechart/LineChartViewController.swift; sourceTree = "<group>"; };
+		83EE02CA1C0A65ED00BFF6DD /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = File.swift; path = ../../../../Desktop/Progressive_Overload/Progressive_Overload/File.swift; sourceTree = "<group>"; };
+		83EE02CC1C0A65F600BFF6DD /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = ../../../../Desktop/Progressive_Overload/Schedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +128,12 @@
 				83EC3E701BFB728C00DB35F2 /* LineChart.swift */,
 				83EC3E711BFB728C00DB35F2 /* LineChartViewController.swift */,
 				83DD34101BFD9C7A00DE02B2 /* ExerciseViewController.swift */,
+				83EE02CC1C0A65F600BFF6DD /* Schedule.swift */,
 				83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */,
 				83B9E1481BF95E68009461FC /* ProfileViewController.swift */,
 				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
 				83329BB91C05432800F9E6E8 /* Main.storyboard */,
+				83EE02CA1C0A65ED00BFF6DD /* File.swift */,
 				83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */,
 				83C4E00A1BE014040021DDD0 /* Assets.xcassets */,
 				83C4E00C1BE014040021DDD0 /* LaunchScreen.storyboard */,
@@ -290,12 +296,14 @@
 				83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */,
 				83B9E1491BF95E68009461FC /* ProfileViewController.swift in Sources */,
 				83EC3E721BFB728C00DB35F2 /* LineChart.swift in Sources */,
+				83EE02CD1C0A65F600BFF6DD /* Schedule.swift in Sources */,
 				83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */,
 				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
 				83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */,
 				83DD34111BFD9C7A00DE02B2 /* ExerciseViewController.swift in Sources */,
 				83B9E14D1BFA6A94009461FC /* HistoryViewController.swift in Sources */,
 				83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */,
+				83EE02CB1C0A65ED00BFF6DD /* File.swift in Sources */,
 				83EC3E731BFB728C00DB35F2 /* LineChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
