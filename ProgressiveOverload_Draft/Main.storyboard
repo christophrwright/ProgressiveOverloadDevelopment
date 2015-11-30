@@ -361,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYH-Ea-rbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="-1332"/>
+            <point key="canvasLocation" x="984" y="-1356"/>
         </scene>
         <!--Routines-->
         <scene sceneID="9YT-rO-FxG">
@@ -379,8 +379,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="4rJ-T2-xum" kind="relationship" relationship="viewControllers" id="S6u-Qh-WYd"/>
-                        <segue destination="hL6-hX-G0v" kind="relationship" relationship="viewControllers" id="5Gx-Q5-A2r"/>
                         <segue destination="yqh-ap-Th4" kind="relationship" relationship="viewControllers" id="dlL-cP-Pyh"/>
+                        <segue destination="hL6-hX-G0v" kind="relationship" relationship="viewControllers" id="s4p-ax-K7l"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPs-0X-src" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -433,7 +433,7 @@
                             <outlet property="delegate" destination="hL6-hX-G0v" id="SkE-Ia-TjD"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Exercises" image="exercise" selectedImage="exercise" id="Lbj-Cb-pEK"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="44B-sa-ohB"/>
                     <navigationItem key="navigationItem" title="Exercises" id="x55-lX-3aY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5L-5e-RZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -443,7 +443,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="282" y="-1332"/>
+            <point key="canvasLocation" x="274" y="-1356"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="4ra-Kv-8yu">
@@ -464,7 +464,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="exercise" width="15" height="15"/>
         <image name="profile" width="15" height="15"/>
         <image name="routine" width="15" height="15"/>
         <image name="sampleImage" width="200" height="150"/>

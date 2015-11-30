@@ -12,7 +12,6 @@
 		83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */; };
 		83B9E1491BF95E68009461FC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E1481BF95E68009461FC /* ProfileViewController.swift */; };
 		83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14A1BFA5A98009461FC /* Routines.swift */; };
-		83B9E14D1BFA6A94009461FC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */; };
 		83B9E15B1BFA6D6D009461FC /* swift-linechart-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 83B9E15A1BFA6D6D009461FC /* swift-linechart-master.zip */; };
 		83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E0011BE014040021DDD0 /* AppDelegate.swift */; };
 		83C4E00B1BE014040021DDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E00A1BE014040021DDD0 /* Assets.xcassets */; };
@@ -28,6 +27,9 @@
 		83EE02CF1C0B6E3500BFF6DD /* Scratchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02CE1C0B6E3500BFF6DD /* Scratchpad.swift */; };
 		83EE02D11C0BA4FD00BFF6DD /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D01C0BA4FD00BFF6DD /* ExerciseList.swift */; };
 		83EE02D31C0BC9D700BFF6DD /* RoutineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D21C0BC9D700BFF6DD /* RoutineList.swift */; };
+		83EE02D71C0BE65D00BFF6DD /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D41C0BE65D00BFF6DD /* History.swift */; };
+		83EE02D81C0BE65D00BFF6DD /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D51C0BE65D00BFF6DD /* HistoryDetailViewController.swift */; };
+		83EE02D91C0BE65D00BFF6DD /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D61C0BE65D00BFF6DD /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,6 @@
 		83B9E1461BF945E7009461FC /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
 		83B9E1481BF95E68009461FC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		83B9E14A1BFA5A98009461FC /* Routines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routines.swift; path = ../Routines.swift; sourceTree = "<group>"; };
-		83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../HistoryViewController.swift; sourceTree = "<group>"; };
 		83B9E15A1BFA6D6D009461FC /* swift-linechart-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "swift-linechart-master.zip"; path = "/Users/chris/GitHub/ProgressiveOverloadDevelopment/ProgressiveOverload_Draft/swift-linechart-master.zip"; sourceTree = "<absolute>"; };
 		83C4DFFE1BE014040021DDD0 /* ProgressiveOverload_Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressiveOverload_Draft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C4E0011BE014040021DDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +76,9 @@
 		83EE02CE1C0B6E3500BFF6DD /* Scratchpad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scratchpad.swift; sourceTree = "<group>"; };
 		83EE02D01C0BA4FD00BFF6DD /* ExerciseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseList.swift; path = ../ExerciseList.swift; sourceTree = "<group>"; };
 		83EE02D21C0BC9D700BFF6DD /* RoutineList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoutineList.swift; path = ../RoutineList.swift; sourceTree = "<group>"; };
+		83EE02D41C0BE65D00BFF6DD /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = History.swift; path = "../../../../Downloads/ProgressiveOverload_Draft copy-1/History.swift"; sourceTree = "<group>"; };
+		83EE02D51C0BE65D00BFF6DD /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDetailViewController.swift; path = "../../../../Downloads/ProgressiveOverload_Draft copy-1/HistoryDetailViewController.swift"; sourceTree = "<group>"; };
+		83EE02D61C0BE65D00BFF6DD /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = "../../../../Downloads/ProgressiveOverload_Draft copy-1/HistoryViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,9 @@
 				83EC3E711BFB728C00DB35F2 /* LineChartViewController.swift */,
 				83DD34101BFD9C7A00DE02B2 /* ExerciseViewController.swift */,
 				83EE02CC1C0A65F600BFF6DD /* Schedule.swift */,
-				83B9E14C1BFA6A94009461FC /* HistoryViewController.swift */,
+				83EE02D41C0BE65D00BFF6DD /* History.swift */,
+				83EE02D51C0BE65D00BFF6DD /* HistoryDetailViewController.swift */,
+				83EE02D61C0BE65D00BFF6DD /* HistoryViewController.swift */,
 				83B9E1481BF95E68009461FC /* ProfileViewController.swift */,
 				83E30E0F1BF11AC90009CD9E /* ExerciseTableViewController.swift */,
 				83329BB91C05432800F9E6E8 /* Main.storyboard */,
@@ -299,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE02D81C0BE65D00BFF6DD /* HistoryDetailViewController.swift in Sources */,
 				83B9E1471BF945E7009461FC /* RoutineTableViewController.swift in Sources */,
 				83B9E1491BF95E68009461FC /* ProfileViewController.swift in Sources */,
 				83EC3E721BFB728C00DB35F2 /* LineChart.swift in Sources */,
@@ -308,10 +315,11 @@
 				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
 				83EE02CF1C0B6E3500BFF6DD /* Scratchpad.swift in Sources */,
 				83B9E14B1BFA5A98009461FC /* Routines.swift in Sources */,
+				83EE02D71C0BE65D00BFF6DD /* History.swift in Sources */,
 				83DD34111BFD9C7A00DE02B2 /* ExerciseViewController.swift in Sources */,
-				83B9E14D1BFA6A94009461FC /* HistoryViewController.swift in Sources */,
 				83E30E121BF11AEA0009CD9E /* Exercises.swift in Sources */,
 				83EC3E731BFB728C00DB35F2 /* LineChartViewController.swift in Sources */,
+				83EE02D91C0BE65D00BFF6DD /* HistoryViewController.swift in Sources */,
 				83EE02D11C0BA4FD00BFF6DD /* ExerciseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

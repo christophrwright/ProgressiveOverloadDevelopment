@@ -23,10 +23,14 @@ class ExerciseViewController: UIViewController {
     @IBOutlet weak var userReps: UITextField!
     @IBOutlet weak var userWeight: UITextField!
     
+    @IBOutlet var theVC: UIViewController!
 
-    var currentExercise:Exercises!
-    // func setBest(){}
     
+    var listOfExercises = exerciseList
+    var selectedGoalStats = exerciseList[0].goalStats_ // as [Int]!
+    var selectedUserStats  = exerciseList[0].userStats_ // as [Int]! 
+    
+    var currentExercise:Exercises = exerciseList[0] as Exercises!  // func setBest(){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,15 +38,14 @@ class ExerciseViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         self.title = currentExercise.name_
-        let selectedGoalStats:[Int] = currentExercise.goalStats_ as [Int]!
-        let selectedUserStats:[Int] = currentExercise.userStats_ as [Int]!
-        self.weight.text = "\(selectedGoalStats[0])"
-        self.reps.text = "\(selectedGoalStats[1])"
-        self.sets.text = "\(selectedGoalStats[2])"
+
+/*        self.weight.text = String(selectedGoalStats[0])
+        self.reps.text = String(selectedGoalStats[1].value)
+        self.sets.text = String(selectedGoalStats[2].value)
         
-        self.userWeight.text = "\(selectedUserStats[0])"
-        self.userReps.text = "\(selectedUserStats[1])"
-        self.userSets.text = "\(selectedUserStats[2])"
+        self.userWeight.text = String(selectedUserStats[0])
+        self.userReps.text = String(selectedUserStats[1])
+        self.userSets.text = String(selectedUserStats[2])*/
     }
 
     override func didReceiveMemoryWarning() {

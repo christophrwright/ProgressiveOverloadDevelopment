@@ -15,7 +15,7 @@ class ExerciseTableViewController: UITableViewController{
     var listOfExercises = exerciseList
 
     
-    @IBAction override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
+  /*   @IBAction override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         let exercise = self.listOfExercises[indexPath.row]
         let exerciseIndex:Int = theTableView.indexPathForSelectedRow!.row
         
@@ -28,8 +28,8 @@ class ExerciseTableViewController: UITableViewController{
             
             
             print("prep segue: \(exerciseIndex)")
-        } //  */
-    }
+        }
+    }//  */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,7 @@ class ExerciseTableViewController: UITableViewController{
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
         self.listOfExercises = exerciseList
         // reload the table
         self.tableView.reloadData()
