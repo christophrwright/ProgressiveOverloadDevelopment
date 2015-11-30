@@ -9,22 +9,10 @@
 import UIKit
 
 class RoutineTableViewController: UITableViewController {
-    struct Routines{
-        let name:String
-        let exerciseList : [Exercises]
-    }
-    var listOfRoutines = [Routines(name:"myRoutine",
-        exerciseList:[Exercises(name:"Null",
-            musclesUsed:["Zero", "Zilch", "Nada"],
-            requiredEquipment:"None",
-            goalStats:[0,0,0],
-            myStats:[0,0,0],
-            gainOrMaintain:false,
-            history:[NSDate():(0,0)],
-            baseline:[(0,0)],
-            weightProgression:progressPlan[0]
-            )]
-        )]
+
+    @IBOutlet var theTableView: UITableView!
+    var listOfRoutines = routineList
+    
     
     /*  @IBAction func addRoutine(sender: AnyObject) {
     let button = sender as! UIButton
@@ -53,54 +41,7 @@ class RoutineTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         // this is used as self.listOfRoutines[0]
-        self.listOfRoutines = [Routines(name:"FullBody Routine", exerciseList:[
-            Exercises(name:"Push Ups",
-                musclesUsed:["Pectorals", "Triceps", "Back", "Core"],
-                requiredEquipment:"None",
-                goalStats:[0,0,0],
-                myStats:[0,0,0],
-                gainOrMaintain:false,
-                history:[NSDate():(0,0)],
-                baseline:[(0,0)],
-                weightProgression:progressPlan[0]),
-            Exercises(name:"Sit Ups",
-                musclesUsed:["Back", "Core"],
-                requiredEquipment:"None",
-                goalStats:[0,0,0],
-                myStats:[0,0,0],
-                gainOrMaintain:false,
-                history:[NSDate():(0,0)],
-                baseline:[(0,0)],
-                weightProgression:progressPlan[0]),
-            Exercises(name:"Squats",
-                musclesUsed:["Glutes", "Calves", "Back", "Core"],
-                requiredEquipment:"None",
-                goalStats:[0,0,0],
-                myStats:[0,0,0],
-                gainOrMaintain:false,
-                history:[NSDate():(0,0)],
-                baseline:[(0,0)],
-                weightProgression:progressPlan[0]),
-            Exercises(name:"Deadlift",
-                musclesUsed:["Back", "Triceps", "Shoulders", "Core"],
-                requiredEquipment:"None",
-                goalStats:[0,0,0],
-                myStats:[0,0,0],
-                gainOrMaintain:false,
-                history:[NSDate():(0,0)],
-                baseline:[(0,0)],
-                weightProgression:progressPlan[0]),
-            Exercises(name:"Pull Ups",
-                musclesUsed:["Back", "Biceps", "Pectorals"],
-                requiredEquipment:"None",
-                goalStats:[0,0,0],
-                myStats:[0,0,0],
-                gainOrMaintain:false,
-                history:[NSDate():(0,0)],
-                baseline:[(0,0)],
-                weightProgression:progressPlan[0])]
-            )]
-        
+        self.listOfRoutines = routineList        
         // reload the table
         self.tableView.reloadData()
     }
@@ -123,7 +64,7 @@ class RoutineTableViewController: UITableViewController {
         let theRoutine = self.listOfRoutines[indexPath.row]
         
         // Configure Cell
-        cell.textLabel!.text = theRoutine.name
+        cell.textLabel!.text = theRoutine.name_
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell

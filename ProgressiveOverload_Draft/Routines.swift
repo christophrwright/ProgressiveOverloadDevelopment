@@ -9,15 +9,16 @@
 import Foundation
 
 class Routines{
-    var name : String
-    var routine = [Exercises]()
+    var name_ : String
+    var routine_ = [Exercises]()
     
-    init(newName:String, newRoutine:[Exercises]){
-        name = newName
-        routine = newRoutine
+    init(name:String, routine:[Exercises]){
+        name_ = name
+        routine_ = routine
     }
     
-    func changeName(newName:String){
-        self.name = newName
+    func changeName(name:String){
+        self.name_ = name
     }
+    
 }

@@ -27,6 +27,7 @@
 		83EE02CD1C0A65F600BFF6DD /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02CC1C0A65F600BFF6DD /* Schedule.swift */; };
 		83EE02CF1C0B6E3500BFF6DD /* Scratchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02CE1C0B6E3500BFF6DD /* Scratchpad.swift */; };
 		83EE02D11C0BA4FD00BFF6DD /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D01C0BA4FD00BFF6DD /* ExerciseList.swift */; };
+		83EE02D31C0BC9D700BFF6DD /* RoutineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE02D21C0BC9D700BFF6DD /* RoutineList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		83EE02CC1C0A65F600BFF6DD /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = ../../../../Desktop/Progressive_Overload/Schedule.swift; sourceTree = "<group>"; };
 		83EE02CE1C0B6E3500BFF6DD /* Scratchpad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scratchpad.swift; sourceTree = "<group>"; };
 		83EE02D01C0BA4FD00BFF6DD /* ExerciseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseList.swift; path = ../ExerciseList.swift; sourceTree = "<group>"; };
+		83EE02D21C0BC9D700BFF6DD /* RoutineList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoutineList.swift; path = ../RoutineList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				83E30E111BF11AEA0009CD9E /* Exercises.swift */,
 				83EE02D01C0BA4FD00BFF6DD /* ExerciseList.swift */,
 				83B9E14A1BFA5A98009461FC /* Routines.swift */,
+				83EE02D21C0BC9D700BFF6DD /* RoutineList.swift */,
 				83EC3E701BFB728C00DB35F2 /* LineChart.swift */,
 				83EC3E711BFB728C00DB35F2 /* LineChartViewController.swift */,
 				83DD34101BFD9C7A00DE02B2 /* ExerciseViewController.swift */,
@@ -300,6 +303,7 @@
 				83B9E1491BF95E68009461FC /* ProfileViewController.swift in Sources */,
 				83EC3E721BFB728C00DB35F2 /* LineChart.swift in Sources */,
 				83EE02CD1C0A65F600BFF6DD /* Schedule.swift in Sources */,
+				83EE02D31C0BC9D700BFF6DD /* RoutineList.swift in Sources */,
 				83C4E0021BE014040021DDD0 /* AppDelegate.swift in Sources */,
 				83E30E101BF11AC90009CD9E /* ExerciseTableViewController.swift in Sources */,
 				83EE02CF1C0B6E3500BFF6DD /* Scratchpad.swift in Sources */,
